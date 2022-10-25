@@ -1,23 +1,28 @@
-html{
+html, body{
     scroll-behavior: smooth;
     overflow-x: hidden;
-    margin-left: 0%;
-    margin-bottom: 0%;
-    width:100vw;
-
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+.app {
+    display: grid;
+    height: inherit;
+    grid-template-columns: 1fr;
+    grid-template-rows: 120px 1fr 50px;
+    overflow: hidden;
 }
 
+.content {
+    overflow-y: scroll
+}
 
-header{
+header, footer {
+    padding: 0 10px;
+}
+
+header {
     background: linear-gradient( #b5eecd, #ace8dc );
-    width:100vw;
-    left:0;
-    top:0;
-    padding-top: 5%;
-    padding-bottom: 5%;
-    position: fixed;
-    overflow: hidden;
-    z-index:1000;
     box-shadow: 0px 1px 5px grey;
 }
 
@@ -26,14 +31,10 @@ header h1{
     text-align: left;
     font-size: 30px;
     color:#FFFFFF;
-    margin-left: 2%;
-    
-    
 }
 
-nav{
+nav {
     text-align: center;
-    
 }
     
 
@@ -43,8 +44,6 @@ nav a{
     font-size: 15px;
     border: 0.5px solid;
     border-radius: 30%;
-    margin: 1%;
-    padding: 1% ;
     background-color: #f8efe6;
     text-decoration: none;
     width: 15%;
@@ -64,20 +63,6 @@ nav a:hover{
     transform:scale(120%);
     transition-duration: 0.5s;
     opacity: 90%;
-}
-
-section{
-    width: 100vw;
-    padding-top: 80%;
-    padding-bottom: 80%;
-    
-    
-}
-
-div{ 
-    
-    margin-left:4%;
-    
 }
     
 #Normal{
@@ -99,28 +84,28 @@ div{
 
 .image{
     float:left;
-    
-    width: 40%;
 }
 
 .text{
     float: right;
-    width: 40%;
 }
-
-
-
-
 
 footer{
     clear:both;
     background: linear-gradient(#ace8dc, #b5eecd );
-    width: 100vw;
-    padding-top: 20%;
-    padding-bottom:20%;
-    padding-left: 3%;
-    bottom:0;
-    position: relative;
     box-shadow: 0px -1px 5px grey;
     overflow-y: hidden;
 }
+
+#Normal>.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#Normal>.container>aside {
+    width: fit-content;
+} 
+
+
