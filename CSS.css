@@ -72,6 +72,7 @@ nav a:hover{
 
 #Buff{
     background: #f6d2ae;
+    
 }
 
 #Toned{
@@ -100,12 +101,45 @@ footer{
 #Normal>.container {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    justify-content: left;
+    align-items: left;
+    
 }
 
 #Normal>.container>aside {
+    width:fit-content;
+    
+} 
+
+#Buff>.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: left;
+}
+
+#Buff>.container>aside {
     width: fit-content;
 } 
 
+#Toned>.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: left;
+}
 
+#Toned>.container>aside {
+    width: fit-content;
+} 
+
+#Skinny>.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: left;
+}
+
+#Skinny>.container>aside {
+    width: fit-content;
+} 
