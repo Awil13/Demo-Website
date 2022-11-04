@@ -1,9 +1,14 @@
-html, body{
+html{
     scroll-behavior: smooth;
-    overflow-x: hidden;
+    
+}
+
+body{
     margin: 0;
-    width: 100%;
-    height: 100%;
+    width:auto;
+    height:auto;
+    overflow-x:hidden
+    
 }
 .app {
     display: grid;
@@ -11,42 +16,53 @@ html, body{
     grid-template-columns: 1fr;
     grid-template-rows: 120px 1fr 50px;
     overflow: hidden;
+    
 }
 
 .content {
-    overflow-y: scroll
+    overflow-y: scroll;
 }
 
 header, footer {
-    padding: 0 10px;
+    padding: 30px;
 }
 
 header {
-    background: linear-gradient( #b5eecd, #ace8dc );
+    background-image: url(images/cash-macanaya-ndtVFSIu68I-unsplash.jpg);
+    background-position:center;
+    height: 150px;
+    background-repeat: no-repeat;
+    background-size:cover;
     box-shadow: 0px 1px 5px grey;
+    position:relative
 }
 
 header h1{
     font-family:sans-serif, Arial, Times New Roman;
     text-align: left;
     font-size: 30px;
-    color:#FFFFFF;
+    color: black;
 }
 
-nav {
-    text-align: center;
-}
     
+.navigation{
+    display:flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    padding: 10px;
+    background: #555;
+    color: #f1f1f1;
+    margin-top: 110px;
+}
+
 
 nav a{
-    display: inline-block;
     font-family: sans-serif, Arial, Times New Roman;
     font-size: 15px;
-    border: 0.5px solid;
-    border-radius: 30%;
-    background-color: #f8efe6;
     text-decoration: none;
-    width: 15%;
 }
 
 nav a:link{
@@ -55,54 +71,71 @@ nav a:link{
 }
 
 nav a:visited{
-    color:black;
+    color: black;
 }
 
 nav a:hover{
-    background-color:#FFFCF9;
+    background-color:#f7b778;
     transform:scale(120%);
     transition-duration: 0.5s;
     opacity: 90%;
 }
+
+.sticky{
+    position:fixed;
+    top:0;
+    width: 100%;
+}
+
+.sticky + .content{
+    padding-top: 102px;
+}
+
+
+h2{
+    font-family: sans-serif, Arial, Times New Roman;
+    text-align: center;
+    font-size: 30px;
+    color: #FFFFFF;
+}
     
 #Normal{
     background: #faeba6;
+    height: 800px;
    
 }
 
 #Buff{
-    background: #f6d2ae;
-    
+    height: 800px;
 }
 
 #Toned{
-    background: #f8c1ba;
+    background: #ddc5e7;
+    height:800px;
 }
 
 #Skinny{
-    background: #ddc5e7;
-}
 
-.image{
-    float:left;
-}
-
-.text{
-    float: right;
+    height: 800px;
 }
 
 footer{
     clear:both;
     background: linear-gradient(#ace8dc, #b5eecd );
     box-shadow: 0px -1px 5px grey;
-    overflow-y: hidden;
+    overflow: hidden;
+    
 }
 
 #Normal>.container {
     display: flex;
     flex-direction: row;
-    justify-content: left;
-    align-items: left;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: flex-end;
+    height: 250px;
+    
     
 }
 
@@ -114,8 +147,12 @@ footer{
 #Buff>.container {
     display: flex;
     flex-direction: row;
-    justify-content: left;
-    align-items: left;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: flex-end;
+    height: 250px;
+    
 }
 
 #Buff>.container>aside {
@@ -125,8 +162,12 @@ footer{
 #Toned>.container {
     display: flex;
     flex-direction: row;
-    justify-content: left;
-    align-items: left;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: flex-end;
+    height: 250px;
+    
 }
 
 #Toned>.container>aside {
@@ -136,8 +177,12 @@ footer{
 #Skinny>.container {
     display: flex;
     flex-direction: row;
-    justify-content: left;
-    align-items: left;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: flex-end;
+    height: 250px;
+   
 }
 
 #Skinny>.container>aside {
