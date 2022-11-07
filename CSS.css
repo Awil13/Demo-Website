@@ -1,5 +1,6 @@
 html{
     scroll-behavior: smooth;
+    margin: 0;
     
 }
 
@@ -12,10 +13,9 @@ body{
 }
 .app {
     display: grid;
-    height: inherit;
+    height:inherit;
     grid-template-columns: 1fr;
     grid-template-rows: 120px 1fr 50px;
-    overflow: hidden;
     
 }
 
@@ -34,17 +34,21 @@ header{
 
 }
 
+
 .content{
 
     margin-top: 90px;
     overflow-y: scroll;
+    overflow-x:hidden;
+    
 }
 
 header h1{
     font-family:sans-serif, Arial, Times New Roman;
     text-align: left;
-    font-size: 30px;
+    font-size: 40px;
     color: black;
+    margin-top: 0px;
 }
 
     
@@ -57,18 +61,14 @@ header h1{
     width: auto;
     padding: 10px;
     background: #555;
-    color: #f1f1f1;
-    
-    
-   
 }
-
 
 nav a{
     font-family: sans-serif, Arial, Times New Roman;
-    font-size: 15px;
+    font-size: 17px;
     text-decoration: none;
     margin: 8px;
+    
 }
 
 nav a:link{
@@ -87,22 +87,18 @@ nav a:hover{
     opacity: 90%;
 }
 
-.sticky{
-    position:fixed;
-    top:0;
-    width: 100%;
-}
-
-.sticky + .content{
-    padding-top: 102px;
-}
-
-
 h2{
     font-family: sans-serif, Arial, Times New Roman;
     text-align: center;
-    font-size: 30px;
-    color: #FFFFFF;
+    font-size: 25px;
+    color: black;
+}
+
+.intro{
+    height: 800px;
+    background:#faf9f6;
+    margin-top: 0px;
+    padding: 10px
 }
     
 #Normal{
@@ -113,6 +109,7 @@ h2{
 
 #Buff{
     height: 800px;
+    background:#faf9f6;
 }
 
 #Toned{
@@ -123,30 +120,40 @@ h2{
 #Skinny{
 
     height: 800px;
+    background:#faf9f6;
 }
 
-footer{
-    clear:both;
-    background: linear-gradient(#ace8dc, #b5eecd );
-    box-shadow: 0px -1px 5px grey;
-    overflow: hidden;
-    
+p{
+    margin-top: 0px;
+    padding: 40px;
+    width: 290px;
+    font-family: sans-serif, Arial, Times New Roman;
+    font-size: 17px;
+    text-align: justify;
 }
 
-#Normal>.container {
+figure{
+    font-family: sans-serif, Arial, Times New Roman;
+    font-size: 17px;
+    text-align: justify
+
+}
+
+#Normal>.container{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
     align-content: flex-end;
-    height: 250px;
-    
-    
+    height: 250px;    
 }
 
 #Normal>.container>aside {
-    width:fit-content;
+    width:300px;
+    font-family: sans-serif, Arial, Times New Roman;
+    font-size: 17px;
+    text-align:justify;
     
 } 
 
@@ -162,7 +169,11 @@ footer{
 }
 
 #Buff>.container>aside {
-    width: fit-content;
+    width: 300px;
+    font-family: sans-serif, Arial, Times New Roman;
+    font-size: 17px;
+    text-align:justify;
+
 } 
 
 #Toned>.container {
@@ -177,7 +188,10 @@ footer{
 }
 
 #Toned>.container>aside {
-    width: fit-content;
+    width: 300px;
+    font-family: sans-serif, Arial, Times New Roman;
+    font-size: 17px;
+    text-align:justify;
 } 
 
 #Skinny>.container {
@@ -192,5 +206,34 @@ footer{
 }
 
 #Skinny>.container>aside {
-    width: fit-content;
+    width: 300px;
+    font-family: sans-serif, Arial, Times New Roman;
+    font-size: 17px;
+    text-align:justify;
 } 
+
+footer{
+    clear:both;
+    background: linear-gradient(#ace8dc, #b5eecd );
+    box-shadow: 0px -1px 5px grey;
+    overflow: hidden;
+    font-size: 17px;
+    height:auto;
+   
+}
+
+footer a {
+    text-decoration: none;
+    color: black;
+}
+
+.reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 2s all ease;
+  }
+  .reveal.active{
+    transform: translateY(0);
+    opacity: 1;
+  }
