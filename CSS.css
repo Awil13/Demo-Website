@@ -1,239 +1,221 @@
-html{
-    scroll-behavior: smooth;
-    margin: 0;
-    
+html {
+  scroll-behavior: smooth;
+  margin: 0;
 }
 
-body{
-    margin: 0;
-    width:auto;
-    height:auto;
-    overflow-x:hidden
-    
+body {
+  margin: 0;
+  width: auto;
+  height: auto;
+  overflow-x: hidden;
 }
 .app {
-    display: grid;
-    height:inherit;
-    grid-template-columns: 1fr;
-    grid-template-rows: 120px 1fr 50px;
-    
+  display: grid;
+  height: inherit;
+  grid-template-columns: 1fr;
+  grid-template-rows: 120px 1fr 50px;
 }
 
-header, footer {
-    padding: 30px;
+header,
+footer {
+  padding: 30px;
 }
 
-header{
-    background-image: url(images/cash-macanaya-ndtVFSIu68I-unsplash.jpg);
-    background-position:center;
-    height: 150px;
-    background-repeat: no-repeat;
-    background-size:cover;
-    box-shadow: 0px 1px 5px grey;
-    position:relative;
-
+header {
+  background-image: url(images/cash-macanaya-ndtVFSIu68I-unsplash.jpg);
+  background-position: center;
+  height: 150px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 0px 1px 5px grey;
+  position: relative;
 }
 
-
-.content{
-
-    margin-top: 90px;
-    overflow-y: scroll;
-    overflow-x:hidden;
-    
+.content {
+  margin-top: 90px;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 
-header h1{
-    font-family:sans-serif, Arial, Times New Roman;
-    text-align: left;
-    font-size: 40px;
-    color: black;
-    margin-top: 0px;
+header h1 {
+  font-family: sans-serif, Arial, Times New Roman;
+  text-align: left;
+  font-size: 40px;
+  color: black;
+  margin-top: 0px;
 }
 
-    
-.navigation{
-    display:flex;
-    flex-direction:row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    width: auto;
-    padding: 10px;
-    background: #555;
+.navigation {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  padding: 10px;
+  background: #555;
 }
 
-nav a{
-    font-family: sans-serif, Arial, Times New Roman;
-    font-size: 17px;
-    text-decoration: none;
-    margin: 8px;
-    
+nav a {
+  font-family: sans-serif, Arial, Times New Roman;
+  font-size: 17px;
+  text-decoration: none;
+  margin: 8px;
 }
 
-nav a:link{
-    color:black;
-
+nav a:link {
+  color: black;
 }
 
-nav a:visited{
-    color: black;
+nav a:visited {
+  color: black;
 }
 
-nav a:hover{
-    background-color:#f7b778;
-    transform:scale(120%);
-    transition-duration: 0.5s;
-    opacity: 90%;
+nav a:hover {
+  background-color: #f7b778;
+  transform: scale(120%);
+  transition-duration: 0.5s;
+  opacity: 90%;
 }
 
-h2{
-    font-family: sans-serif, Arial, Times New Roman;
-    text-align: center;
-    font-size: 25px;
-    color: black;
+h2 {
+  font-family: sans-serif, Arial, Times New Roman;
+  text-align: center;
+  font-size: 25px;
+  color: black;
 }
 
-.intro{
-    height: 800px;
-    background:#faf9f6;
-    margin-top: 0px;
-    padding: 10px
-}
-    
-#Normal{
-    background: #faeba6;
-    height: 800px;
-   
+.intro {
+  height: 800px;
+  background: #faf9f6;
+  margin-top: 0px;
+  padding: 10px;
 }
 
-#Buff{
-    height: 800px;
-    background:#faf9f6;
+#Normal {
+  background: #faeba6;
+  height: 800px;
 }
 
-#Toned{
-    background: #ddc5e7;
-    height:800px;
+#Buff {
+  height: 800px;
+  background: #faf9f6;
 }
 
-#Skinny{
-
-    height: 800px;
-    background:#faf9f6;
+#Toned {
+  background: #ddc5e7;
+  height: 800px;
 }
 
-p{
-    margin-top: 0px;
-    padding: 40px;
-    width: 290px;
-    font-family: sans-serif, Arial, Times New Roman;
-    font-size: 17px;
-    text-align: justify;
+#Skinny {
+  height: 800px;
+  background: #faf9f6;
 }
 
-figure{
-    font-family: sans-serif, Arial, Times New Roman;
-    font-size: 17px;
-    text-align: justify
-
+p {
+  margin-top: 0px;
+  padding: 40px;
+  width: 290px;
+  font-family: sans-serif, Arial, Times New Roman;
+  font-size: 17px;
+  text-align: justify;
 }
 
-#Normal>.container{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-    align-content: flex-end;
-    height: 250px;    
+figure {
+  font-family: sans-serif, Arial, Times New Roman;
+  font-size: 17px;
+  text-align: justify;
 }
 
-#Normal>.container>aside {
-    width:300px;
-    font-family: sans-serif, Arial, Times New Roman;
-    font-size: 17px;
-    text-align:justify;
-    
-} 
-
-#Buff>.container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-    align-content: flex-end;
-    height: 250px;
-    
+#Normal > .container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: flex-end;
+  height: 250px;
 }
 
-#Buff>.container>aside {
-    width: 300px;
-    font-family: sans-serif, Arial, Times New Roman;
-    font-size: 17px;
-    text-align:justify;
-
-} 
-
-#Toned>.container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-    align-content: flex-end;
-    height: 250px;
-    
+#Normal > .container > aside {
+  width: 300px;
+  font-family: sans-serif, Arial, Times New Roman;
+  font-size: 17px;
+  text-align: justify;
 }
 
-#Toned>.container>aside {
-    width: 300px;
-    font-family: sans-serif, Arial, Times New Roman;
-    font-size: 17px;
-    text-align:justify;
-} 
-
-#Skinny>.container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-    align-content: flex-end;
-    height: 250px;
-   
+#Buff > .container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: flex-end;
+  height: 250px;
 }
 
-#Skinny>.container>aside {
-    width: 300px;
-    font-family: sans-serif, Arial, Times New Roman;
-    font-size: 17px;
-    text-align:justify;
-} 
+#Buff > .container > aside {
+  width: 300px;
+  font-family: sans-serif, Arial, Times New Roman;
+  font-size: 17px;
+  text-align: justify;
+}
 
-footer{
-    clear:both;
-    background: linear-gradient(#ace8dc, #b5eecd );
-    box-shadow: 0px -1px 5px grey;
-    overflow: hidden;
-    font-size: 17px;
-    height:auto;
-   
+#Toned > .container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: flex-end;
+  height: 250px;
+}
+
+#Toned > .container > aside {
+  width: 300px;
+  font-family: sans-serif, Arial, Times New Roman;
+  font-size: 17px;
+  text-align: justify;
+}
+
+#Skinny > .container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: flex-end;
+  height: 250px;
+}
+
+#Skinny > .container > aside {
+  width: 300px;
+  font-family: sans-serif, Arial, Times New Roman;
+  font-size: 17px;
+  text-align: justify;
+}
+
+footer {
+  clear: both;
+  background: linear-gradient(#ace8dc, #b5eecd);
+  box-shadow: 0px -1px 5px grey;
+  overflow: hidden;
+  font-size: 17px;
+  height: auto;
 }
 
 footer a {
-    text-decoration: none;
-    color: black;
+  text-decoration: none;
+  color: black;
 }
 
-.reveal{
-    position: relative;
-    transform: translateY(150px);
-    opacity: 0;
-    transition: 2s all ease;
-  }
-  .reveal.active{
-    transform: translateY(0);
-    opacity: 1;
-  }
+.reveal {
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 2s all ease;
+}
+.reveal.active {
+  transform: translateY(0);
+  opacity: 1;
+}
