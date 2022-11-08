@@ -17,3 +17,33 @@ function reveal() {
 }
 
 reveal();
+
+
+var header = document.getElementById("stickynav");
+var sticky = header.offsetTop;
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+
+
+var mybutton = document.getElementById("myBtn");
+function scrollFunction() {
+  if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+function topFunction() {
+  document.body.scrollTop = 0; 
+  document.documentElement.scrollTop = 0; 
+}
+
+window.onscroll = function() {
+  myFunction()
+  scrollFunction()
+};

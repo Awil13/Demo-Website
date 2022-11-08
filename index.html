@@ -7,7 +7,7 @@
       charset="UTF-8"
     />
     <title>Exercise</title>
-    <link rel="stylesheet" href="CSS.css" />
+    <link rel="stylesheet" href="style.css" />
     <script
       src="https://kit.fontawesome.com/4ab5fbb36c.js"
       crossorigin="anonymous"
@@ -21,11 +21,11 @@
         <h1>Ganbatte Yo!</h1>
       </header>
       <div class="content">
-        <nav class="navigation">
-            <a href="#Normal">Normal</a>
-            <a href="#Buff">Buff</a>
-            <a href="#Toned">Toned</a>
-            <a href="#Skinny">Skinny</a>
+        <nav class="navigation" id="stickynav">
+            <a href="#Normal" style="color:white">Normal</a>
+            <a href="#Buff"style="color:white">Buff</a>
+            <a href="#Toned"style="color:white">Toned</a>
+            <a href="#Skinny"style="color:white">Skinny</a>
         </nav>
 
         <div class="intro">
@@ -68,7 +68,7 @@
 
         <section id="Buff">
           <center><p>Looking to build those biceps? Incorporate these into your daily routine</p></center>
-          <div class="container">
+          <div class="container reveal">
             <section class="image">
               <figure>
                 <img src="images/weight-lifting.png" alt="weight lifting" width="70px" />
@@ -78,7 +78,7 @@
             </aside>
           </div>
 
-          <div class="container">
+          <div class="container reveal">
             <section class="image">
               <figure>
                 <img src="images/push-up.png" alt="push-ups" width="70px" />
@@ -90,7 +90,7 @@
 
         <section id="Toned">
           <center><p>Looking for toned body instead of bulky muscles, these exercises are for you</p></center>
-          <div class="container">
+          <div class="container reveal">
             <section class="image">
               <figure>
                 <img src="images/pilates.png" alt="resistance bands" width="70px" />
@@ -99,7 +99,7 @@
             <aside class="text">Resistance Bands keep your form in check and provides same muscle activity.</aside>
           </div>
 
-          <div class="container">
+          <div class="container reveal">
             <section class="image">
               <figure>
                 <img src="images/yoga.png" alt="yoga" width="70px" />
@@ -111,7 +111,7 @@
 
         <section id="Skinny">
           <center><p>Want to be slimmer but the other techniques a bit too much? Try these</p></center>
-          <div class="container">
+          <div class="container reveal">
           <section class="image">
             <figure>
               <img src="images/diet.png" alt="diet" width="70px" />
@@ -121,7 +121,7 @@
           <aside class="text"> Healthy dieting helps with weight loss and supports a healthier heart</aside>
         </div>
         
-        <div class="container">
+        <div class="container reveal">
           <section class="image">
             <figure>
               <img src="images/sleeping.png" alt="sleeping" width="70px" />
@@ -132,6 +132,8 @@
           </aside>
         </div>
       </section>
+
+      <button onclick="topFunction()" id="myBtn" title="Go to top">Back to Top</button>
 
       <footer>
        
