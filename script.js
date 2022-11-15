@@ -5,7 +5,7 @@ function reveal() {
     for (var i = 0; i < reveal.length; i++) {
       var windowHeight = window.innerHeight;
       var elementTop = reveal[i].getBoundingClientRect().top;
-      var elementVisible = 150;
+      var elementVisible = 100;
 
       if (elementTop < windowHeight - elementVisible) {
         reveal[i].classList.add("active");
@@ -30,9 +30,9 @@ function myFunction() {
 }
 
 
-var mybutton = document.getElementById("myBtn");
+var mybutton = document.getElementById("Btn");
 function scrollFunction() {
-  if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+  if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
     mybutton.style.display = "block";
   } else {
     mybutton.style.display = "none";
@@ -47,3 +47,4 @@ window.onscroll = function() {
   myFunction()
   scrollFunction()
 };
+
