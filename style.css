@@ -130,7 +130,7 @@ h2 {
   margin-left: 20px;
   padding-top:40px;
   width: 300px;
-  text-align: justify;
+  
 }
 
 p {
@@ -139,14 +139,14 @@ p {
   width: 300px;
   font-family: sans-serif, Arial, Times New Roman;
   font-size: 17px;
-  text-align: justify;
+  
 }
 
 .quote {
   font-family: sans-serif, Arial, Times New Roman;
   font-size: 17px;
-  text-align: justify;
-  width: 300px;
+  margin-left: 0px;
+  width: 350px;
 }
 
 @media screen and (min-width:500px){
